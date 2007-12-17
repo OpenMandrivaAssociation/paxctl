@@ -9,7 +9,6 @@ Release:	%mkrel %{release}
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://pax.grsecurity.net/
 Group:		System/Configuration/Other
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	Public Domain
 
 %description
