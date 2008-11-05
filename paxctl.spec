@@ -1,5 +1,5 @@
 %define name	paxctl
-%define version	0.3
+%define version	0.5
 %define release 1
 
 Name:		%{name}
@@ -30,11 +30,13 @@ process network data such as mail clients, web browsers, etc).
 %make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{makeinstall_std}
+rm -rf %{buildroot}
+mkdir -p %{buildroot}/sbin %{buildroot}%{_mandir}/man1
+cp -p %{name}.1* %{buildroot}%{_mandir}/man1
+cp -p /sbin/%{name} %{buildroot}/sbin
 
 %clean 
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %{buildroot}
 
 %files 
 %defattr(644,root,root,0755) 
