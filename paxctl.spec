@@ -33,7 +33,7 @@ process network data such as mail clients, web browsers, etc).
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/sbin %{buildroot}%{_mandir}/man1
 cp -p %{name}.1* %{buildroot}%{_mandir}/man1
-cp -p /sbin/%{name} %{buildroot}/sbin
+cp -p %{name} %{buildroot}/sbin
 
 %clean 
 rm -rf %{buildroot}
