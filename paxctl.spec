@@ -1,6 +1,6 @@
 %define name	paxctl
 %define version	0.5
-%define release 3
+%define release 2
 
 Name:		%{name}
 Summary:	Tool that allows PaX flags to be modified on a per-binary basis
@@ -45,3 +45,31 @@ rm -rf %{buildroot}
 %defattr(-,root,root,0755)
 /sbin/%{name}
 
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.5-2mdv2010.0
++ Revision: 433615
+- fix installing (was installing system file instead of its own binary...)
+- rebuild
+
+  + Gustavo De Nardin <gustavodn@mandriva.com>
+    - 0.5
+    - build: easier to install manually than using make install
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.3-1mdv2009.0
++ Revision: 136642
+- restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tvignaud@mandriva.com> 0.3-1mdv2008.1
++ Revision: 131044
+- kill re-definition of %%buildroot on Pixel's request
+- import paxctl
+
+
+* Mon Aug 08 2005 Per Øyvind Karlsen <pkarlsen@mandriva.com> 0.3-1mdk
+- 0.3
+- %%mkrel
+
+* Wed Jul 28 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.2-1mdk
+- initial mdk release
