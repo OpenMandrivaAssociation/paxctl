@@ -1,6 +1,6 @@
 %define name	paxctl
 %define version	0.5
-%define release 2
+%define release 3
 
 Name:		%{name}
 Summary:	Tool that allows PaX flags to be modified on a per-binary basis
