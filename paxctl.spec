@@ -5,7 +5,7 @@
 Name:		%{name}
 Summary:	Tool that allows PaX flags to be modified on a per-binary basis
 Version:	%{version}
-Release:	%mkrel %{release}
+Release:	1
 Source0:	%{name}-%{version}.tar.gz
 URL:		http://pax.grsecurity.net/
 Group:		System/Configuration/Other
