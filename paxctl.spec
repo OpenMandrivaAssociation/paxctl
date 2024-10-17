@@ -7,7 +7,7 @@ Summary:	Tool that allows PaX flags to be modified on a per-binary basis
 Version:	%{version}
 Release:	1
 Source0:	%{name}-%{version}.tar.gz
-URL:		http://pax.grsecurity.net/
+URL:		https://pax.grsecurity.net/
 Group:		System/Configuration/Other
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	Public Domain
