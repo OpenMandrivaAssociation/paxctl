@@ -12,6 +12,7 @@ Group:		System/Configuration/Other
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	Public Domain
 
+BuildRequires:	make
 %description
 This is paxctl for controlling PaX flags on a per binary basis. PaX
 is an intrusion prevention system that provides the best protection
